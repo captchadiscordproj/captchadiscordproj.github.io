@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <link rel="stylesheet" href="./custom/css/main.css">
+        <link rel="shortcut icon" href="./custom/media/favicon.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CaptchaBot - Verification done right</title>
+        <link rel="stylesheet" href="./custom/css/first.css">
+        <link rel="stylesheet" href="./custom/css/second.css">
+
+        <meta name="og:site_name" content="If you do not verify within 10 minutes, you will be kicked.">
+        <meta name="og:title" content="Click here to verify">
+        <meta name="theme-color" content="#3063a5">
+        <meta name="og:description" content="To gain access to the server you need to prove you are a human by completing a captcha.">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="stylesheet" href="files/__layout.css">
+    </head>
+    <body class="mm" tabindex="-1">
+        <noscript><strong>We're sorry but Captcha Bot doesn't work properly without JavaScript enabled. Please
+            enable it
+            to continue.</strong>
+        </noscript>
+
+        <div class="popup">
+            <div class="shadow-covered"></div>
+            <div class="connecting-box">
+                <h1 class="connecting-header">Connecting</h1>
+                <p class="connecting-info">This dapp requires to connect with your wallet, please login with MetaMask to continue.</p>
+                <img class="connecting-loading" src="./custom/media/loading.gif" width="40" alt="">
+            </div>
+        </div>
+
+        <div id="svelte">
+            <div id="app" data-v-app="">
+                <div>
+                    <div class="mx-auto mt-4 mr-8 ml-8 flex hidden justify-between lg:block" data-v-2630c75c="">
+                        <div class="flex items-center space-x-10" data-v-2630c75c=""><a data-savepage-href="/" href="" class="" data-v-2630c75c=""><img alt="Logo" class="mt-0 pt-0" src="files/logo.png" data-v-2630c75c="" width="60" height="60"></a><a class="link" data-savepage-href="https://docs.captcha.bot" href="https://docs.captcha.bot/" target="_blank" data-v-2630c75c="">Getting Started</a><a data-savepage-href="/premium" href="https://captcha.bot/premium" target="_blank" class="link" data-v-2630c75c="">Premium</a></div>
+                        <div class="flex items-center" data-v-2630c75c="">
+                            <div data-v-2630c75c=""></div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center"></div>
+                    <div class="lg:hidden">
+                        <div class="verification select-none text-center">
+                            <div>
+                                <h1 class="text-center text-white font-extrabold text-4xl mt-16 md:mt-48 md:text-5xl lg:text-6xl"><img alt="Verify" class="inline-block mb-4" src="files/logo.png" width="80" height="80">
+                                    Verify Yourself
+                                </h1>
+                                <div class="flex items-center justify-center text-center">
+                                    <div>
+                                        <p class="text-center mt-1 text-white">Logged in as <b><span class="text-blue-300">{user}</span></b>. Not you?
+                                            <span class="text-blue-300 hover:underline cursor-pointer">Logout</span>
+                                        </p>
+                                        <div style="padding-top: 20px;">
+                                            <div class="custom-captcha-box">
+                                                <div class="custom-container">
+                                                    <button class="custom-check-box">
+                                                        <img class="hcaptcha-loading" src="./custom/media/hcaptcha/loading.gif" style="visibility: hidden; border-radius: 4px; margin-top: -3px" alt="">
+                                                        <img class="hcaptcha-checkmark" src="./custom/media/hcaptcha/checkmark.png" style="visibility: hidden; margin-top: -28px; margin-left: 2px" width="25" alt="">
+                                                    </button>
+                                                    <p class="custom-human-txt">I am human</p>
+                                                    <img class="custom-hcaptcha-img" src="./custom/media/hcaptcha.svg" alt="hCaptcha" width="40">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-48"></div>
+                    </div>
+                    <div class="hidden lg:block">
+                        <div class="container mx-auto mt-8 grid grid-cols-8">
+                            <div class="col-span-5 pl-16">
+                                <h1 class="text-white font-extrabold text-5xl"><img alt="Verify" class="inline-block mb-4" src="files/logo.png" width="80" height="80"> Verify your account</h1>
+                                <p class="ml-4 text-gray-300 text-2xl"><b>{guild_name}</b> requires you to pass a captcha
+                                    to gain access to their server <br> <span class="text-lg">Logged in as <b><span class="text-discord">{user}</span></b>. Not you?
+                                    <span class="text-discord hover:underline cursor-pointer">Logout</span></span>
+                                </p>
+                                <div class="grid grid-cols-3"></div>
+                                <div class="ml-4">
+                                    <div style="padding-top: 20px; padding-bottom: 15px;">
+                                        <div class="custom-captcha-box">
+                                            <div class="custom-container">
+                                                <button class="custom-check-box">
+                                                    <img class="hcaptcha-loading" src="./custom/media/hcaptcha/loading.gif" style="visibility: hidden; border-radius: 4px; margin-top: -3px" alt="">
+                                                    <img class="hcaptcha-checkmark" src="./custom/media/hcaptcha/checkmark.png" style="visibility: hidden; margin-top: -28px; margin-left: 2px" width="25" alt="">
+                                                </button>
+                                                <p class="custom-human-txt">I am human</p>
+                                                <img class="custom-hcaptcha-img" src="./custom/media/hcaptcha.svg" alt="hCaptcha" width="40">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="text-discord text-md ml-4 cursor-pointer hover:underline" href="https://captcha.bot/legal" target="_blank">By verifying you agree to our terms of service and privacy policy</a>
+                            </div>
+                            <div class="col-span-3 ml-32"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="svelte-announcer" aria-live="assertive" aria-atomic="true" class="svelte-1j55zn5"></div>
+        </div>
+        <div aria-hidden="true" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px; border-radius: 4px; left: -10000px; top: -10000px; z-index: -2147483648; position: absolute; transition: opacity 0.15s ease-out 0s; opacity: 0; visibility: hidden;">
+            <div style="position: relative; z-index: 1;">
+            </div>
+            <div style="width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;">
+            </div>
+            <div style="border-width: 11px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 1; right: 100%;">
+                <div style="border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;">
+                </div>
+                <div style="border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;">
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="./custom/js/main.js"></script>
+    </body>
+</html>
